@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  --bg-color: #010107;
+  --text-color: #EDF2FF; 
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 25px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  text-align: center;
+  width: 300px;
+  margin: 6px auto;
+
+}
+
+.avatar{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: var(--text-color) solid 4px;
+  padding: 3.7px;
+
+}
+
+.username {
+  font-size: 24px;
+  margin-top: 4px;
+  margin-bottom: 24px;
+  margin-right: 120px;
+  
+}
+
+.box{
+    width: 65px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0.6rem;
+    margin-left: 50px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .4s ease;
+  }
+
+.box:hover{
+  width: 200px;
+  background: #c32aa3;
+  border-radius: 32px;
+  color: #fff;
+  box-shadow: 0 0 50px #b315917c;
+}
+
+.box:nth-child(2):hover{
+  background: #445aff;
+  box-shadow: 0 0 50px #001d939a;
+}
+
+.box:nth-child(3):hover{
+  background: #49b6ff;
+  box-shadow: 0 0 50px #0099ff7e;
+}
+
+.box:nth-child(4):hover{
+  background: #9b00ba;
+  box-shadow: 0 0 50px #3000577e;
+}
+
+.navbar p{
+  transform: translate(60px);
+}
+
+.navbar a{
+  transform: translate(60px);
+}
+
+.box .icon{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  transform: all .4s ease;
+}
+
+.instagram{
+  background-color: #c32aa3;
+}
+.linkedin{
+  background-color: #445aff;
+}
+.twitter{
+  background-color: #49b6ff;
+}
+.twitch{
+  background-color: #9b00ba;
+}
+
+.box:hover .icon{
+  background-color: #fff;
+  color: #3b3b3b;
+  box-shadow: 0 0 20px rgba(0,0,0,0.26);
+}
+
+footer {
+  margin-top: 24px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.6;
+  transition: opacity 400ms;
+  
+}
+
+footer:hover{
+  opacity: 1;
+
+}
